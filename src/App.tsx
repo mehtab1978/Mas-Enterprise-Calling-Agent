@@ -5,15 +5,24 @@ import { startLiveSession, endLiveSession } from './services/geminiService';
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[#0a0f1d]/80 backdrop-blur-md border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 rounded-sm bg-gradient-gold flex items-center justify-center font-display font-bold text-navy">M</div>
-          <span className="font-display text-2xl tracking-wide font-semibold text-white">
-            Mas <span className="text-gradient-gold">Enterprise</span>
-          </span>
+    <nav className="fixed top-0 w-full z-40 bg-[#0a0f1d]/90 backdrop-blur-md border-b border-white/5 py-2">
+      <div className="max-w-7xl mx-auto px-6 min-h-[5rem] flex items-center justify-between">
+        <div className="flex items-center space-x-3">
+          <div className="w-10 h-10 rounded-sm bg-gradient-gold flex-shrink-0 flex items-center justify-center font-display font-bold text-navy text-xl">M</div>
+          <div className="flex flex-col justify-center">
+            <span className="font-display text-2xl tracking-wide font-semibold text-white leading-none mb-1">
+              Mas <span className="text-gradient-gold">Enterprise</span>
+            </span>
+            <div className="flex flex-col md:flex-row md:items-center gap-0.5 md:gap-2 text-[10px] text-silver/80">
+              <span>Site made by <a href="https://www.facebook.com/share/1B3CdKJ5L9/" target="_blank" rel="noreferrer" className="text-[#d4af37] hover:underline font-medium">Jolly Ai</a></span>
+              <span className="hidden md:inline text-white/20">•</span>
+              <a href="https://wa.me/919330273530" target="_blank" rel="noreferrer" className="hover:text-[#d4af37] transition font-medium">
+                WhatsApp For Getting The Great Business Growth Services
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest text-silver">
+        <div className="hidden lg:flex items-center space-x-8 text-sm uppercase tracking-widest text-silver">
           <a href="#home" className="hover:text-white transition">Home</a>
           <a href="#products" className="hover:text-white transition">Products</a>
           <a href="https://wa.me/918296641774" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition">
