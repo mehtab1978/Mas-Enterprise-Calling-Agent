@@ -162,12 +162,24 @@ function Footer() {
   return (
     <footer className="py-12 bg-[#0a0f1d] border-t border-white/10 relative z-10 text-center text-sm text-silver/60">
       <div className="max-w-4xl mx-auto px-6 space-y-4">
-        <div className="flex items-center justify-center space-x-6 text-white">
+        <div className="flex flex-wrap items-center justify-center gap-6 text-white mb-6">
           <a href="tel:+918296641774" className="flex items-center gap-2 hover:text-[#d4af37] transition"><Phone size={16}/> 8296641774</a>
           <a href="https://wa.me/918296641774" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[#d4af37] transition"><MessageCircle size={16}/> WhatsApp Us</a>
         </div>
         <p className="pt-4 border-t border-white/5">Owner: Mr. Mehtab Rahman | Near Akra Station Road, Maheshtala, Kolkata 700141</p>
         <p className="uppercase tracking-[0.2em] text-xs pt-4">Powered by Mas Enterprise AI Voice Agent</p>
+        
+        <div className="pt-8 mt-8 border-t border-white/5 flex flex-col items-center gap-3">
+          <p>
+            Site made by {" "}
+            <a href="https://www.facebook.com/share/1B3CdKJ5L9/" target="_blank" rel="noreferrer" className="text-[#d4af37] hover:underline font-medium">
+              Jolly Ai
+            </a>
+          </p>
+          <a href="https://wa.me/919330273530" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-silver hover:text-[#d4af37] transition text-xs uppercase tracking-widest">
+            <MessageCircle size={14} /> WhatsApp For Getting The Great Business Growth Services
+          </a>
+        </div>
       </div>
     </footer>
   );
