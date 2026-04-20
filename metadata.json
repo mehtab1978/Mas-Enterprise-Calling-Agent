@@ -1,0 +1,8 @@
+{
+  "name": "Mas Enterprise AI Agent",
+  "description": "Premium steel security doors and windows provider with Aria AI voice calling agent.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}
