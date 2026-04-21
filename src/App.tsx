@@ -13,7 +13,7 @@ function Navbar() {
             <span className="font-display text-2xl tracking-wide font-semibold text-white leading-none mb-1">
               Mas <span className="text-gradient-gold">Enterprise</span>
             </span>
-            <div className="flex flex-col md:flex-row md:items-center gap-0.5 md:gap-2 text-[10px] text-silver/80">
+            <div className="flex flex-col md:flex-row md:items-center gap-0.5 md:gap-2 text-xs md:text-sm text-silver/80 mt-1">
               <span>Site made by <a href="https://www.facebook.com/share/1B3CdKJ5L9/" target="_blank" rel="noreferrer" className="text-[#d4af37] hover:underline font-medium">Jolly Ai</a></span>
               <span className="hidden md:inline text-white/20">•</span>
               <a href="https://wa.me/919330273530" target="_blank" rel="noreferrer" className="hover:text-[#d4af37] transition font-medium">
@@ -76,14 +76,19 @@ function Hero({ onStartCall }: { onStartCall: () => void }) {
           Experience unmatched strength and luxury finish. Talk live to our AI Voice Expert to find the perfect custom door for your space.
         </motion.p>
         
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="max-w-2xl mx-auto text-sm text-[#d4af37]/80 mb-12 uppercase tracking-wider font-semibold"
+          className="mb-12"
         >
-          Use Only For Basic Info.
-        </motion.p>
+          <p className="max-w-2xl mx-auto text-sm text-[#d4af37]/80 uppercase tracking-wider font-semibold">
+            Use Only For Basic Info.
+          </p>
+          <p className="max-w-2xl mx-auto text-sm text-silver/60 mt-2 font-medium tracking-wide">
+            हिंदी &nbsp;•&nbsp; বাংলা &nbsp;•&nbsp; English
+          </p>
+        </motion.div>
 
         <motion.div
            initial={{ opacity: 0, scale: 0.9 }}
@@ -178,15 +183,15 @@ function Footer() {
         <p className="pt-4 border-t border-white/5">Owner: Mr. Mehtab Rahman | Near Akra Station Road, Maheshtala, Kolkata 700141</p>
         <p className="uppercase tracking-[0.2em] text-xs pt-4">Powered by Mas Enterprise AI Voice Agent</p>
         
-        <div className="pt-8 mt-8 border-t border-white/5 flex flex-col items-center gap-3">
-          <p>
+        <div className="pt-8 mt-8 border-t border-white/5 flex flex-col items-center gap-4">
+          <p className="text-base md:text-lg">
             Site made by {" "}
-            <a href="https://www.facebook.com/share/1B3CdKJ5L9/" target="_blank" rel="noreferrer" className="text-[#d4af37] hover:underline font-medium">
+            <a href="https://www.facebook.com/share/1B3CdKJ5L9/" target="_blank" rel="noreferrer" className="text-[#d4af37] hover:underline font-semibold">
               Jolly Ai
             </a>
           </p>
-          <a href="https://wa.me/919330273530" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-silver hover:text-[#d4af37] transition text-xs uppercase tracking-widest">
-            <MessageCircle size={14} /> WhatsApp For Getting The Great Business Growth Services
+          <a href="https://wa.me/919330273530" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-silver hover:text-[#d4af37] transition text-sm md:text-base uppercase tracking-widest font-medium">
+            <MessageCircle size={18} /> WhatsApp For Getting The Great Business Growth Services
           </a>
         </div>
       </div>
